@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-label class="voltar"  (click)="voltar()">voltar</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <section class="block">
+    <ion-list class="pef">
+      <ion-avatar aria-hidden="true" slot="start"  class="ava">
+        <img alt="perfil" src="https://ionicframework.com/docs/img/demos/avatar.svg" class="img"/>
+      </ion-avatar>
+    </ion-list>
+  
+    <ion-list>
+      <ion-label>[ {{nome}} ]</ion-label>
+    </ion-list>
+  </section>
+  
+
+  <ion-list class="list">
+    <ion-item>
+      <ion-icon name="person"></ion-icon>
+      <ion-label>Informações Pessoais</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="notifications-outline"></ion-icon>
+      <ion-label>Notificações</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="globe-outline"></ion-icon>
+      <ion-label>Lista de desejos</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="heart" aria-label="Favorite"></ion-icon>
+      <ion-label>Salvos</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="cog"></ion-icon>
+      <ion-label>configurações</ion-label>
+    </ion-item>
+  </ion-list>
+  
+
+</ion-content>

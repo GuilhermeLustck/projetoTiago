@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-item (click)="perfil()">
+    <ion-avatar aria-hidden="true" slot="start">
+      <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+  </ion-item>
+  <ion-searchbar
+   show-cancel-button="focus"
+   placeholder="Show on Focus"
+   color="light"
+   ></ion-searchbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  
+  <ion-list *ngFor="let itens of cont">
+
+    <ion-item>
+      <ion-label [id]=itens.id >{{itens.espeto}}</ion-label>
+      <ion-label> {{itens.valor}} </ion-label>
+      <ion-icon name="add-outline"  (click)="getcar(itens.id)"></ion-icon>
+    </ion-item>
+
+  </ion-list>
+
+  
+  
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar class="footer">
+
+    
+    <ion-icon name="search-outline" class="icon" ></ion-icon>
+    
+    
+    
+    <ion-icon name="cart-outline" class="menu" (click)="carrinho()"></ion-icon>
+    
+
+  </ion-toolbar>
+
+
+</ion-footer>

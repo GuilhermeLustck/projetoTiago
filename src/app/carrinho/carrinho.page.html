@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-label (click)="voltar()">voltar</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list *ngFor="let itens of cont">
+    <ion-item>
+      <ion-label [id]=itens.id >{{itens.espeto}}</ion-label>
+      <ion-label> {{itens.valor}} </ion-label>
+      
+    </ion-item>
+  </ion-list>
+
+</ion-content>

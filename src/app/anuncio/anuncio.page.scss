@@ -1,0 +1,12 @@
+.footer{
+    position: relative;
+    display: flex ;
+    flex-direction: row;
+}
+.icon,.menu{
+    font-size: 300%;
+}
+.menu{
+    position: relative;
+    left: 70%;
+}
